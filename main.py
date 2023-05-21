@@ -17,6 +17,7 @@ print(ru.SUCCESS)
 print(ru.START)
 print(ru.CHOICE)
 ans = input()
+
 while ans != '1':
     if ans == '2':
         print(ru.ANS_NO)
@@ -32,6 +33,7 @@ while ans != '1':
             print(ru.CHOICE)
             ans = input()
             break
+
 else:
     if ans == '1':
         print(ru.NIGHT)
@@ -40,12 +42,15 @@ else:
         print(ru.MND_ROOMMATE)
         print(ru.CHOICE)
         ans_rmmate = input()
+
         check = True
+
         while ans_rmmate != '2' or ans_rmmate != '1':
             print(ru.ANS_ELSE)
             print(ru.MND_ROOMMATE)
             print(ru.CHOICE)
             ans_rmmate = input()
+
             if ans_rmmate == '1':
                 print(ru.MND_TIME)
                 print(ru.MND_PE_NO)
@@ -55,12 +60,14 @@ else:
                 print(ru.CHOICE)
                 hw = input()
                 check = True
+
                 while check:
                     print(ru.ANS_ELSE)
                     print(ru.CHOICE)
                     hw = input()
                     if hw == '1' or hw == '2':
                         check = False
+
                 if hw == '1':
                     print(ru.SCORE, score_1)
                     print(ru.RESPECT, respect_1)
