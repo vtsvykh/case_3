@@ -1,7 +1,7 @@
 """
 "Game: Student day"
 Group:
-Tsvykh Viktoria
+Tsvykh Viktoria 65%
 Fishchukova Sofia
 """
 
@@ -230,8 +230,8 @@ if wed_rmmt_choice == '1':
 
     if wed_eng_2 != '1' and wed_eng_2 !='2':
         while check:
-        print(ru.ANS_ELSE)
-        print(ru.CHOICE)
+            print(ru.ANS_ELSE)
+            print(ru.CHOICE)
         if wed_eng_2 == '1' or wed_eng_2 == '2':
             check = False
 
