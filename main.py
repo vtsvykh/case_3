@@ -2,7 +2,7 @@
 "Game: Student day"
 Group:
 Tsvykh Viktoria 65%
-Fishchukova Sofia
+Fishchukova Sofia 70%
 """
 
 import ru_local as ru
