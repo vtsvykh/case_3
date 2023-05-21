@@ -55,7 +55,7 @@ else:
                 print(ru.MND_TIME)
                 print(ru.MND_PE_NO)
                 score_1 = 2
-                respect_1 = 0
+                respect_1 = -1
                 print(ru.HW)
                 print(ru.CHOICE)
                 hw = input()
@@ -200,7 +200,7 @@ wed_rmmt_choice = input()
 if wed_rmmt_choice == '2':
     print(ru.WED_RMMT_NO)
     score_3 = 2
-    respect_3 = 0
+    respect_3 = -1
     print(ru.WED_HW, ru.WED_HW_MICRO)
     print(ru.CHOICE)
     hw_3 = input()
@@ -238,7 +238,7 @@ if wed_rmmt_choice == '1':
     if wed_eng_2 == '1':
         print(ru.WED_ENG_LIE)
         score_3 = 2
-        respect_3 = 0
+        respect_3 = -1
         print(ru.WED_NIGHT)
         print(ru.RSLT)
         print(ru.SCORE, score_3)
@@ -420,7 +420,7 @@ if fr_ans != '1' and fr_ans != '2':
 if fr_ans == '1':
     print(ru.FR_QSNT_YES)
     score_5 = 2
-    respect_5 = 0
+    respect_5 = -1
     print(ru.HW)
     print(ru.CHOICE)
     hw = input()
@@ -575,6 +575,10 @@ if score < 3 and respect < 3:
   print(ru.RES_SCORE, round(score, 2))
   print(ru.RES_RESP, respect)
   print(ru.END_BD)
+elif score < 3 <= respect:
+    print(ru.RES_SCORE, score)
+    print(ru.RES_RESP, respect)
+    print(ru.END_GD)
 elif score > 3 or respect >= 3:
   print(ru.RES_SCORE, score)
   print(ru.RES_RESP, respect)
