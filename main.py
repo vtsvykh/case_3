@@ -121,6 +121,7 @@ print(ru.TSD_DNT_WNT)
 print(ru.TSD_CHOIS_DNT_WNT)
 ans_tsd = input()
 
+
 while ans_tsd != '1' or ans_tsd != '2':
   print(ru.ANS_ELSE)
   print(ru.TSD_CHOIS_DNT_WNT)
